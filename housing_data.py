@@ -5,6 +5,8 @@ import seaborn as sns
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error,r2_score
+import warnings
+warnings.filterwarnings("ignore")
 
 house = fetch_california_housing()
 df = pd.DataFrame(house.data,columns=house.feature_names)
@@ -56,12 +58,7 @@ x = df.drop("Price", axis=1)
 y = df["Price"]
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=43)
 
-model = DecisionTreeRegressor(  max_depth=7,
-    min_samples_leaf=10,
-    min_samples_split=20,
-    max_leaf_nodes=100,
-    random_state=42
-)
+model = DecisionTreeRegressor()
 model.fit(x_train,y_train)
 pred = model.predict(x_test)
 
@@ -69,7 +66,9 @@ print(mean_squared_error(y_test,pred))
 print(r2_score(y_test,pred))
 
 new_data = [
-    [5.2, 28, 6.1, 1.0, 850, 2.9, 34.05, -118.25]
+    [6.2, 30, 7.1, 1.0, 890, 2.9, 34.05, -138.25],
+    [5.2, 28, 6.1, 1.0, 850, 4.9, 35.05, -118.25],
+    [3.8, 15, 5.4, 1.1, 1200, 3.2, 37.77, -122.42]
 ]
 prediction = model.predict(new_data)
 print("the predicted price of House in California",prediction)
