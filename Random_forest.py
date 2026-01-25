@@ -41,12 +41,12 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
 from sklearn.tree import plot_tree
 df = pd.read_csv("Titanicdataset.csv")
-#print(df.head())
-#print(df.isna().sum())
-#print(df.info())
+print(df.head())
+print(df.isna().sum())
+print(df.info())
 df1=df[['Survived','Sex','Pclass','SibSp','Parch','Fare','Age']]
 df1["Age"] = df1["Age"].fillna(df1["Age"].mean())
-#print(df1.isna().sum())
+print(df1.isna().sum())
 #preprocessing
 label = LabelEncoder()
 df1['Sex'] = label.fit_transform(df1['Sex'])
