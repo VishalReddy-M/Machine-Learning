@@ -1,0 +1,52 @@
+We have to use similarity and distances to find the relationship between two datapoints
+Algorithms:
+1.KNN
+2.K-Means clustering
+3.hierarcial clustering
+4.DIVISE(UNSUP)...
+5.NLP
+6.Image processing
+
+Implementations:
+KNN ALGO
+1.SIMILARITY DISTANCE BASED MEASURE INTRO
+2.COSINE SIMILARITY
+JACCARD SIMILARITY
+PEARSON CORRELATION
+SPEARMAN RANK CORELATION
+3 DISTANCE BASED MEASURES
+EUCLIDEAN 
+MANHATTAN
+MINKOWSKI
+CHEBYCHEV
+4.KNN  INTRO WITH PARAMETER
+5.KNN PRACTICAL IMPLEMENTATION
+
+1.Cosine similarity
+angle between two vectors
+formula ==> Cosine(theta) = A.B/||A|.|B||
+theta--> 1TO 90 --> RELATED
+        90--> UNRELATED
+        >90--> OPPOSITE
+SYNTAX: from sklearn.metrics.pairwise import cosine_similarity
+
+2.JACCARD SIMILARITY
+the overlap between 2 sets
+formula: JACCARD = intersection of 2 sets/union of 2 sets
+ex: recommendation system,plagiarism relation
+SYNTAX: from sklearn.metrics import jaccard_score
+
+3.PEARSON CORELATION
+also known as pattern similarity
+the linear relationship between 2 variables
+checks 2 variables increases/decreases/constant
+RANGE:
++1 = perfect
+0 = no 
+-1 = negative
+
+4.SPEARMAN RANK CORELATION
+rank based method 
+handles non linear data
+gives preference to order 
+SYNTAX: from scipy.stats import spearmanr
