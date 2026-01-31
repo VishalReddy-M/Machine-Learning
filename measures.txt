@@ -50,3 +50,4 @@ rank based method
 handles non linear data
 gives preference to order 
 SYNTAX: from scipy.stats import spearmanr
+
