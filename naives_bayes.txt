@@ -1,0 +1,45 @@
+Naive Bayes Algorithm
+it is a probabilistic Algorithm
+it follows bayes therom
+every feature is independent of each other and it throws a connection to target
+it is a classification Algorithm
+NAIVE means independent
+execution is very fast 
+works very well for text classification
+it handles high dimensional data
+simple and easy to implement
+TYPES:
+1.GAUSSIAN NAIVE BAYES
+2.BERNOULLI NAIVE BAYES
+3.MULTINOMIAL NAIVE BAYES
+
+1.GAUSSIAN:
+--> it is used for continous numerical data / real numbers
+it is used when the feaatures are continous values
+it follows the normal distribution
+EX:
+--> medical data(diabetes,bp)
+--> weather prediction 
+--> iris 
+height,weight,marks,salary,price 
+all the sensor data
+0,1,2,3,4
+
+2.BERNOULLI
+it is used for binary or boolean features
+(0/1,true/false)
+it is used when the features presence and absence
+EX:
+spam/ham Emails,
+medical (disease present are not)
+(0,1)
+
+3.MULTINOMIAL
+it is used for count ,frequency of words
+it is used when features are countable are it is having frequencies
+EX:
+text classification
+spam Emails
+sentiment analysis
+news article classification
+--> text related ,discrete,counts,frequencies
