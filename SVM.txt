@@ -1,0 +1,66 @@
+Support vector machine:
+Introduction:
+it is a supervised machine learning algorithm used for classification and regression
+the main use of it is to separate the data using the best possible specific boundary
+EX:
+apples on one side and oranges on other side 
+so,we have to place a wall between them
+we prefer the wall that keeps max distance from both it will be the best one
+idea of svm:
+it finds the boundary that maximises the margin
+MARGIN:
+it is a decision boundary which IS distance between support vectors to hyperplane.
+SUPPORT VECTORS:
+the points which are closest to the hyperplane are support vectors
+HYPERPLANE:
+the line that separates two data points
+in svm,it is the main line separates data points of different classes
+in 2D--> it is like a line
+in 3D--> it is like a plane
+it selects the hyperplane that maximises the margin between the classes
+Types:
+1.Linear SVM:
+when there is a separation b/w the classes 
+2.Non-Linear SVM:
+we cannot separate it with a straight line
+we use kernels. to separate the classes
+kernel = smart transformation
+kernel moves data into higher dimensions where it becomes separable 
+1.Linear kernel
+data is already separable
+classification --> spam/ham,sentiment analysis
+syntax:
+kernel = "Linear"
+2. polynomial kernel
+relationship is curved but it is structured.
+feature interactions are matter
+just a smooth curved
+syntax:
+kernel = "polynomial"
+price vs demand
+3.RBF(radial basis function):
+Gaussian kernel
+most used kernel as compared to other kernels
+use case?
+we don't know about the data shape 
+it is Linear as well as non Linear
+default choice when linear fails
+image features,medical diagnosis
+4.sigmoid
+used in neural networks as activation function
+
+PARAMETERS:
+1.kernel
+2.c (regularization)--> c controls the stictness of svm in classifying training
+low c --> it can easily tend to mistakes
+high c --> no mistakes are there
+common values: 0.1,0.01 
+syntax
+    svc(c=1)
+3.gamma
+it controls how far the influence of a single training point
+reaches 
+low--> calculates the distance of the all data points to the hyperplane
+high--> calculates the distance of nearest vectors to the hyperplane
+
+
