@@ -1,0 +1,27 @@
+LDA --> linear discriminant analysis
+lda is a supervised learning dimensionality reduction technique that reduces
+dimensions while it maximising class separability
+it mainly focuses on the features helpful to the target variable
+objective:
+it mainly tries to
+1.minimize distance within class
+2.maximize distance between different classes
+the work is to make combination of nearest features
+just it focuses on x values
+
+
+PCA--> principle component analysis
+it is an unsupervised dimensionality reduction technique
+it transforms original features into new set of orthogonal features
+called principal components
+it starts from where the variance is high
+1.transforms original features
+pca creates new features from old features
+2.principal components
+3.maximum variance
+variance = information
+the PCA keeps the direction where the data spreads the most
+it creates new pCs based on the input features inorder wise
+PC1,PC2....
+the average of PCs will be the new feature
+ 
