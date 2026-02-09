@@ -1,0 +1,24 @@
+regularization:
+it is like punishing the mdel i.e; penalty the model if weights become too large
+Types:
+1.ridge regression
+2.lasso regression
+
+Ridge regression:
+    it is also known as L2-regularization
+    it is the error and penalty on square of weights
+    lambda--> it decides how strict the punishment will be 
+    if the weights are huge it is not going to remove but it is going to minimize the weights
+
+it is used when all the features are important ,when the features are corelated ,when we want stable predictions
+
+lasso regression:
+    it is also known as L1-regularization
+    it is the error and penalty on absolute weights
+    lambda--> it decides how strict the punishment will be 
+    it can make some weights exactly 0
+    automatically it does the feature selections
+
+it is used when our dataset has too many features
+and the features contains useless information in some of them
+when we can't decide the importance of features then i automatically decide the feature selections
