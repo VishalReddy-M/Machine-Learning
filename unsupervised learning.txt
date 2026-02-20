@@ -1,0 +1,64 @@
+#UNSUPERVISED LEARNING
+it is a machine learning approach where the dataset has no labels
+we only have input(X) but no target(Y)
+the algorithm learns the structure ,patterns,relationships which are hidden
+inside the data.
+we use unsupervised learning when we don't know the label of the output
+we organize the raw data 
+reduce dimensions
+we can extract the hidden structures
+TYPES OF UNSUPERVISED LEARNING:
+1.CLUSTERING
+2.DIMENSIONALITY REDUCTION
+3.ASSOCIATION RULE MINING
+
+1.CLUSTERING
+the machine learns the grouping data points into clusters based on their
+their similarities
+a.partition based clustering
+also called as K-means clustering---> hard clustering
+divides into K clusters based on distance measures like euclidean 
+we use standard scaler here
+b.hierarchical clustering
+tree like structure called dendogram to show cluster relations
+c.density based clustering
+also called as DBSCAN
+forms clustering based on high density regions in the data
+
+2.DIMENSIONALITY REDUCTION
+reducing the number of features while keeping the important information
+a.PCA
+b.Autoencoder --> mostly used in neural networks
+
+3.ASSOCIATION RULE MINING
+used to detect the nearby data points
+a.apriori
+suggesting another thing based on the previous things which are related to each other
+based on preferences
+Ex: instamart,blinkit
+
+Metrics:
+measure cluster quality,separation,density,similarity
+1.silhouette score
+measures how similar a point to its own cluster compared to other
+range:
++1 ---> perfect
+0 ---> overlapping
+-1 ---> wrong/bad separation
+
+2.Davies bouldin index(DBI)
+used to check the average similarity between the clusters
+lower value = better clustering
+range:
+0 ---> perfect
+higher ---> bad
+
+3.Dunn index
+used to check the ratio of smallest clustering to largest
+higher value = better clustering
+
+4.Caliinski-harabasz index
+in cluster how each data point is connected
+ratio between the cluster dispersions
+ratio within cluster
+higher == better cluster
