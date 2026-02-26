@@ -90,3 +90,32 @@ end: until every point is separated (many individual clusters)
 operation: splitting
 The divisive is less commonly used because of it computational working
 and it is not suite for large data when compared to hierarchical clustering
+
+
+
+#APRIORI ALGORITHM 
+it is simply called as association rule mining.
+it is also known as market basket analysis
+it is used to find the probability of taking one item depends on probability
+of taking another item
+the apriori algorithm is a classical algorithm used for frequent 
+itemset mining and association rule learning
+this chain rule property is apriori property
+
+CONCEPTS:
+1.support
+support(A) = tranasctions containing in A
+            --------------------------------
+                  total tranasctions
+measures frequency
+2.confidence 
+confidence(A--->B) = support(AUB)
+                    --------------
+                     support(A)
+measures reliability
+3.lift
+lift(A--->B) = confidence(A-->B)
+              --------------------
+                support(B)
+measures strength
+
