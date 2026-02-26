@@ -62,3 +62,31 @@ in cluster how each data point is connected
 ratio between the cluster dispersions
 ratio within cluster
 higher == better cluster
+
+#HIERARCHICAL CLUSTERING
+
+it is a clustering technique that builds a tree like structure of clusters
+it displays the dendogram tree
+TYPES:
+1.agglomerative 
+2.divisive
+
+#AGGLOMERATIVE
+it is also known as bottom-up approach
+it start with each data point on its own clusters --> keep merging the closest clusters
+--> continue until only one big cluster is left
+it is bottom-up ,because we start from the smallest,individual units and build upward
+into biggest groups
+
+start: many clusters
+end: one cluster
+operation: merge
+
+2.DIVISIVE 
+it is also known as top-down approach
+
+start: all data points in one cluster
+end: until every point is separated (many individual clusters)
+operation: splitting
+The divisive is less commonly used because of it computational working
+and it is not suite for large data when compared to hierarchical clustering
